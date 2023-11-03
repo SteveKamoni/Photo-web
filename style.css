@@ -1,0 +1,265 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Old+Standard+TT:ital@1&family=Petit+Formal+Script&family=Pinyon+Script&family=Playfair+Display&family=Roboto+Slab:wght@100&display=swap');
+
+  /* 
+  font-family: 'Cedarville Cursive', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+  */
+
+* {
+    box-sizing: border-box;
+}
+
+/* todo Rem to deal with the different screen sizes by incorporating meadia queries*/
+body{
+    height: auto;
+    margin: 0;
+    /* background-image:url(images/abstract-white-shapes-background/5026563.jpg); */
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* ? Header section */
+
+.header{
+    /* background-color: lightcoral; */
+    text-align: center;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+/* ? Nav-section */
+li a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+}
+
+.span-nav{
+    margin-right:3px;
+    font-size: small;
+    font-weight: 900;
+    font-weight: bold;
+}
+.nv-bar{
+    top: 0;
+    margin: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 9%, 96%, 0.7);
+    height: 100px;
+    position: sticky;
+}
+
+.nav-content{
+    list-style: none;
+    padding: 10px 40px;
+    gap: 5px;
+}
+li a:hover,
+.nav-content:hover{
+    color: white;
+    border-radius: 5px;
+}
+@media(min-width: 480px){
+}
+
+
+/* ? Slide-show section */
+/* todo rem to increase the width to fit */
+.slide-show{
+    max-width: 1000px;
+    max-height: auto;
+    position: relative;
+    margin: auto;
+    padding-top: 1rem;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image{
+    list-style-type: none;
+    object-fit: cover;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from{opacity: 0.5}
+    to{opacity: 1}
+}
+
+
+.text-slideshow-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.text-slideshow{
+    padding: 1rem 4rem;
+    background-color: #FEDCC6;
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+}
+
+
+/* ? Location section */
+/* todo rem to style the section */
+.image-container{
+    display: flex;
+    flex-direction: row;
+    flex:auto auto auto;
+    flex-wrap: wrap;
+    background-color: #FFE0CC;
+    height: auto;
+    width: auto;
+    padding-top: 1rem;
+}
+
+.g-image{
+    width: 400px;
+    height: 300px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1rem;    
+    background-color: antiquewhite;
+}
+
+.content-gallary{
+    background-color: #FFB280;
+    text-align: center;
+    text-decoration: none;
+    padding: .5rem .5rem;
+    width: 20rem;
+    height: 2.5rem;
+    left: 2.3rem;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Old Standard TT', serif;
+    transition: 2s;
+}
+
+.main-loc{
+    /* background-color: lightpink; */
+    text-align: center;
+    margin-top:1rem;
+}
+
+.intro-location{
+    display: block;
+    padding: 1rem 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*? Welcome section */
+
+.head-container{
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.head{
+    font-family: 'Dancing Script', cursive;
+}
+
+.grid-container{
+    width: 50%;
+    line-height:0;
+    margin: .6rem auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.grid-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.article-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    mix-blend-mode: lighten;
+}
+
+.article-div {
+    background-color: black;
+    height: 17vw;
+}
+
+
+/* .article-container:hover{
+    grid-gap: 0;
+    transition: .2s;
+} */
+
+/* todo change arrows to look up */
+.button-container{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.button{
+    padding: .5rem 3rem;
+    border-radius: .6rem;
+}
+
+.span{
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.button{
+    font-size: 1rem;
+    background-color: antiquewhite;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #FFE0CC;
+    transition-duration: .5s;
+}
+
+
+.content-gallary:hover{
+    letter-spacing: .6rem;
+}
