@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Old+Standard+TT:ital@1&family=Petit+Formal+Script&family=Pinyon+Script&family=Playfair+Display&family=Roboto+Slab:wght@100&display=swap");
+
+/* 
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+/* todo Rem to deal with the different screen sizes by incorporating meadia queries*/
+
+/* todo Rem to change the font type on navbar */
+
+body {
+  height: auto;
+  margin: 0;
+  /* background-image:url(images/abstract-white-shapes-background/5026563.jpg); */
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* ? Nav Section */
+li a {
+  text-decoration: none;
+  color: grey;
+  display: block;
+}
+
+.span-nav {
+  margin-right: 3px;
+  font-size: small;
+  font-weight: 900;
+  font-weight: bold;
+}
+.nv-bar {
+  top: 0;
+  margin: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 9%, 96%, 0.7);
+  height: 100px;
+  position: sticky;
+}
+
+.nav-content {
+  list-style: none;
+  padding: 10px 40px;
+  gap: 5px;
+}
+li a:hover,
+.nav-content:hover {
+  color: white;
+  border-radius: 5px;
+}
+
+/* ? Intro Section */
+
+.head-container {
+  background-color: lightslategray;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: .5rem 2rem;
+}
+
+.intro-head-text {
+  background-color: lightgreen;
+  width: 500px;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+/* ? The Destinations GAllery Section */
+
+.destination-header{
+    text-align: center;
+    background-color: lightgrey;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+}
+
+.destination-container-church{
+    background-color: lightcoral;
+    margin-top:1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.destination-img-container{
+    position: relative;
+}
+
+.destination-img{
+    width: 200px;
+    height: auto;
+    padding: 1rem 1rem;
+    background-color: antiquewhite;
+}
+
+.destination-text{
+    position: absolute;
+    bottom: 1.4rem;
+    background-color: lightsalmon;
+    padding: .8rem 3rem;
+    left: 22%;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(	250	,235,215 , .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+
+.destination-img-container:hover  .overlay{
+    width: 100%;
+    left: 0;
+}
+
+.overlay-text{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    white-space: nowrap;
+}
+
