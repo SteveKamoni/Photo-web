@@ -167,6 +167,7 @@ li a:hover,
 .story-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 1rem;
 }
 
@@ -178,7 +179,7 @@ li a:hover,
 
 .img-story-container{
     /* background-color: #FAE5D3; */
-    width: 600px;
+    width: 400px;
     height: auto;
     display: flex;
     justify-content: center;

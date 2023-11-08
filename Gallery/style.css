@@ -68,7 +68,6 @@ li a:hover,
 /* ? Intro Section */
 
 .head-container {
-  background-color: lightslategray;
   display: flex;
   justify-content: center;
   margin: 1rem;
@@ -76,33 +75,37 @@ li a:hover,
 }
 
 .intro-head-text {
-  background-color: lightgreen;
-  width: 500px;
+  width: 400px;
   text-align: center;
   text-wrap: wrap;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* ? The Destinations GAllery Section */
 
 .destination-header{
     text-align: center;
-    background-color: lightgrey;
     padding: 1rem 1rem;
     margin: 1rem 1rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 2rem;
 }
 
-.destination-container-church{
-    background-color: lightcoral;
+.destination-container-inner{
+  background-color: #FEDCC6;
     margin-top:1rem;
     padding: 1rem 1rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
     overflow: hidden;
     justify-content: space-around;
 }
 
 .destination-img-container{
     position: relative;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 .destination-img{
@@ -114,10 +117,13 @@ li a:hover,
 
 .destination-text{
     position: absolute;
+    width: 2.6rem;
     bottom: 1.4rem;
     background-color: lightsalmon;
     padding: .8rem 3rem;
     left: 22%;
+    overflow: hidden;
+    font-family: 'Petit Formal Script', cursive;
 }
 
 .overlay{
@@ -144,6 +150,7 @@ li a:hover,
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    white-space: nowrap;
+    white-space: wrap;
+    font-family: 'Old Standard TT', serif;
 }
 
