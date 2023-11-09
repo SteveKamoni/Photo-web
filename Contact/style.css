@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Old+Standard+TT:ital@1&family=Petit+Formal+Script&family=Pinyon+Script&family=Playfair+Display&family=Roboto+Slab:wght@100&display=swap');
+
+/* 
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Old Standard TT', serif;
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* todo Rem to deal with the different screen sizes by incorporating meadia queries*/
+body{
+  height: auto;
+  margin: 0;
+  /* background-image:url(images/abstract-white-shapes-background/5026563.jpg); */
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* ? Header section */
+
+.header{
+  /* background-color: lightcoral; */
+  text-align: center;
+  height: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+/* ? Nav-section */
+li a{
+  text-decoration: none;
+  color: grey;
+  display: block;
+}
+
+.span-nav{
+  margin-right:3px;
+  font-size: small;
+  font-weight: 900;
+  font-weight: bold;
+}
+.nv-bar{
+  top: 0;
+  margin: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 9%, 96%, 0.7);
+  height: 100px;
+  position: sticky;
+}
+
+.nav-content{
+  list-style: none;
+  padding: 10px 40px;
+  gap: 5px;
+}
+li a:hover,
+.nav-content:hover{
+  color: white;
+  border-radius: 5px;
+}
+@media(min-width: 480px){
+}
+
+/* ? form section */
+.form-container{
+    margin-top: 1rem;
+    background-color: lightsalmon;
+}
+
+label{
+    display: inline-block;
+    width: auto;
+    text-align: right;
+}
+
+.contain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

@@ -157,6 +157,7 @@ li a:hover,
 
 .content-gallary{
     background-color: #FFB280;
+    color:#273746;
     text-align: center;
     text-decoration: none;
     padding: .5rem .5rem;
@@ -169,6 +170,7 @@ li a:hover,
     transition: 2s;
 }
 
+
 .main-loc{
     /* background-color: lightpink; */
     text-align: center;
@@ -178,7 +180,7 @@ li a:hover,
 .intro-location{
     display: block;
     padding: 1rem 1rem;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Petit Formal Script', cursive;
 }
 
 /*? Welcome section */
@@ -190,7 +192,7 @@ li a:hover,
 }
 
 .head{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Petit Formal Script', cursive;
 }
 
 .grid-container{
