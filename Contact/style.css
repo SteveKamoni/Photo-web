@@ -79,11 +79,20 @@ li a:hover,
 }
 
 /* ? form section */
+
+
 .form-main-container {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  background-image: url(https://images.unsplash.com/photo-1597861405049-0b011428568f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position:center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -9999;
 }
 
 .name-one,
@@ -130,7 +139,6 @@ select {
 
 .name-one div,
 .name-two div {
-  background-color: antiquewhite;
   width: 90%;
 }
 
@@ -146,4 +154,10 @@ legend {
 
 label {
   font-family: "Old Standard TT", serif;
+}
+
+.img-container img{
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
