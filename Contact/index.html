@@ -1,92 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- NAv-section -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAv-section -->
     <ul class="nv-bar">
-        <li class="nav-content">
-          <a href="/Photo-web/index.html"
-            ><span class="span-nav">00</span>Home</a
-          >
-        </li>
-        <li class="nav-content">
-          <a href="/Photo-web/About/index.html"
-            ><span class="span-nav">01</span>About</a
-          >
-        </li>
-        <li class="nav-content">
-          <a href="/Photo-web/Gallery/index.html"
-            ><span class="span-nav">02</span>Gallery</a
-          >
-        </li>
-        <li class="nav-content">
-          <a href="/Photo-web/Contact/index.html"
-            ><span class="span-nav">03</span>Contact</a
-          >
-        </li>
-      </ul>
-  
-<!-- form-section -->
-    <div class="form-container">
-        <form action="">
+      <li class="nav-content">
+        <a href="/Photo-web/index.html"><span class="span-nav">00</span>Home</a>
+      </li>
+      <li class="nav-content">
+        <a href="/Photo-web/About/index.html"
+          ><span class="span-nav">01</span>About</a
+        >
+      </li>
+      <li class="nav-content">
+        <a href="/Photo-web/Gallery/index.html"
+          ><span class="span-nav">02</span>Gallery</a
+        >
+      </li>
+      <li class="nav-content">
+        <a href="/Photo-web/Contact/index.html"
+          ><span class="span-nav">03</span>Contact</a
+        >
+      </li>
+    </ul>
 
-            <div class="contain">
-                <label for="fname">First Name</label> 
-                <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+    <!-- form-section -->
+    <div class="form-main-container">
+      <form action="" class="form-container" autocomplete="on">
+        <fieldset>
+          <legend>Your Names</legend>
+          <div class="name-one">
+            <div style="margin-left: 5rem">
+              <label for="fname-yours">First Name</label> <br />
+              <input
+                required
+                type="text"
+                id="fname-yours"
+                name="firstname"
+                placeholder="First Name"
+              />
             </div>
-            <div class="contain">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+            <div>
+              <label for="lname-yours">Last Name</label> <br />
+              <input
+                required
+                type="text"
+                id="lname-yours"
+                name="lastname"
+                placeholder="Last Name"
+              />
             </div>
-            <div class="contain">
-                <label for="fname">Partner's Name</label> 
-                <input type="text" id="fname" name="firstname" placeholder="First Name">
+          </div>
+          <div class="name-two">
+            <div style="margin-left: 5rem">
+              <label for="fname">Partner's Name</label> <br />
+              <input
+                required
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="First Name"
+              />
             </div>
-            <div class="contain">
-                <label for="lname">Partner's Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <div>
+              <label for="lname">Partner's Name</label><br />
+              <input
+                required
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Last Name"
+              />
             </div>
-            <div class="contain">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="johnDoe@gmail.com">
+          </div>
+        </fieldset>
+        <br /><br /><br />
+
+        <fieldset class="fieldset-two">
+          <legend>More Info</legend>
+          <div class="phone-email">
+            <div class="email">
+              <label for="email">Email</label> <br />
+              <input
+                required
+                autocomplete="on"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="johnDoe@gmail.com"
+              />
             </div>
-            <div class="contain">
-                <label for="Phone">Phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="07XXXXXXXX">
+            <div class="phone">
+              <label for="phone">Phone</label><br />
+              <input
+                required
+                autocomplete="on"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="07XXXXXXXX"
+              />
             </div>
-            <div class="contain">
-                <label for="day">Event Day</label>
-                <input type="date" name="day" id="day" placeholder="mm/dd/yyy">
+          </div>
+          <div>
+            <div class="day">
+              <label for="day">Event Day</label> <br />
+              <input
+                type="date"
+                name="day"
+                id="day"
+                required
+                placeholder="mm/dd/yyyy"
+              />
             </div>
-            <div class="contain">
-                <label for="ceremony">Ceremony & Reception</label>
-                <input type="text" name="ceremony" id="ceremony" placeholder="The Location">
+            <div class="ceremony">
+              <label for="ceremony">Ceremony & Reception</label> <br />
+              <input
+                required
+                type="text"
+                name="ceremony"
+                id="ceremony"
+                placeholder="The Location"
+              />
             </div>
-            <div class="contain">
-                <label for="destinations">Services</label>
-                <select name="destinations"  id="destinations">
-                    <option value="Church-Wedding">Church-Wedding</option>
-                    <option value="Garden-Wedding">Garden-Wedding</option>
-                    <option value="Civil-Wedding">Civil-Wedding</option>
-                    <option value="Traditional-Wedding">Traditional-Wedding</option>
-                    <option value="Beach-Wedding">Beach-Wedding</option>
-                    <option value="Cruise-Wedding">Cruise-Wedding</option>
-                </select>
+            <div class="services">
+              <label for="destinations">Services</label> <br />
+              <select name="destinations" id="destinations" required>
+                <option value="Church-Wedding">Church-Wedding</option>
+                <option value="Garden-Wedding">Garden-Wedding</option>
+                <option value="Civil-Wedding">Civil-Wedding</option>
+                <option value="Traditional-Wedding">Traditional-Wedding</option>
+                <option value="Beach-Wedding">Beach-Wedding</option>
+                <option value="Cruise-Wedding">Cruise-Wedding</option>
+              </select>
             </div>
-            <div class="contain">
-                <label for="info-about-us">How did you hear about us ?</label>
-                <textarea name="info-about-us" id="info-about-us" cols="30" rows="10"></textarea>
+          </div>
+
+          <div>
+            <div class="info-us">
+              <label for="info-about-us"
+                >How did you hear about us ? (Optional)</label
+              >
+              <br />
+              <textarea
+                name="info-about-us"
+                id="info-about-us"
+                cols="30"
+                rows="10"
+              ></textarea>
             </div>
-            <div class="contain">
-                <label for="story">Tell us your story(optional)</label>
-                <textarea name="story" id="story" cols="30" rows="10"></textarea>
+            <div class="story">
+              <label for="story">Tell us your story (Optional)</label> <br />
+              <textarea name="story" id="story" cols="30" rows="10"></textarea>
             </div>
-        </form>
+          </div>
+        </fieldset>
+      </form>
     </div>
-</body>
+  </body>
 </html>
