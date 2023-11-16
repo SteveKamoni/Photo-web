@@ -60,7 +60,8 @@ li a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: hsl(0, 9%, 96%, 0.7);
+  background-color: rgba(250, 235, 215, 0.6);
+  /* background-color: hsl(0, 9%, 96%, 0.7); */
   height: 100px;
   position: sticky;
 }
@@ -88,11 +89,15 @@ li a:hover,
   padding: 2rem;
   background-image: url(https://images.unsplash.com/photo-1597861405049-0b011428568f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position:center;
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: -9999;
+}
+
+.form-container{
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .name-one,
@@ -126,7 +131,8 @@ select {
 .ceremony,
 .services,
 .info-us,
-.story {
+.story, 
+.submit {
   margin-left: 13.4rem;
   margin-top: 1rem;
 }
@@ -156,8 +162,7 @@ label {
   font-family: "Old Standard TT", serif;
 }
 
-.img-container img{
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+.submit{
+  max-width:66.5%;
 }
+
