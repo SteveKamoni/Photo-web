@@ -47,7 +47,7 @@ li, a {
     display: block;
 }
 
-.span{
+.nav-content span{
     margin-right:3px;
     font-size: 10px;
     font-weight: 400;
@@ -66,6 +66,7 @@ li, a {
     background-color: rgb(237, 187, 153, .6);
     height: 100px;
     position: fixed;
+    z-index: 999;
 }
 
 .logo-nav{
@@ -206,14 +207,13 @@ li a:hover{
 }
 
 /* ? Slide-show section */
-/* todo rem to increase the width to fit */
+
 .slide-show{
     max-width: 1000px;
     max-height: auto;
     position: relative;
     margin: auto;
     padding-top: 1rem;
-    /* background-color: chocolate; */
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -251,7 +251,7 @@ li a:hover{
 
 
 /* ? Location section */
-/* todo rem to style the section */
+
 .image-container{
     display: flex;
     flex-direction: row;
