@@ -533,3 +533,22 @@ label {
       padding: 0;
   }
 }
+
+/* ? form submission section */
+
+.loading-template {
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.submission-message {
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  background-color: #d4edda;
+  color: #155724;
+}
