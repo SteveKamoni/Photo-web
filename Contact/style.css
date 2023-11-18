@@ -537,18 +537,29 @@ label {
 /* ? form submission section */
 
 .loading-template {
+  position: absolute;
+  bottom: -38.5rem;
+  right:25rem;
+  left: 15.5rem;
   display: none;
   text-align: center;
+  width: 64%;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: #f0f0f0;
 }
 
 .submission-message {
+  position: absolute;
+  bottom: -38.5rem;
+  right:25rem;
+  left: 15.5rem;
   display: none;
   text-align: center;
+  width: 64%;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: #d4edda;
   color: #155724;
 }
+
