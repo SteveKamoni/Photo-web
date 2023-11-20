@@ -526,9 +526,20 @@ li a:hover{
         width: 100%;
         margin-left: 2.5rem;
     }
+
+    .g-image a{
+        width: 15rem;
+    }
 }
 
-@media(max-width:480px){
+@media screen and (max-width: 430px){
+    
+    .g-image a{
+     width: 17rem;   
+    }
+}
+
+@media screen and (max-width:480px){
     .logo-query{
         display: flex;
         justify-content: center;
@@ -557,7 +568,7 @@ li a:hover{
     }
 }
 
-@media(max-width: 540px){
+@media screen and (max-width: 540px){
     .image-container{
         display: flex;
         flex-direction: auto;
@@ -574,9 +585,13 @@ li a:hover{
         text-wrap: wrap;
         text-align: center;
     }
+
+    .dropdown-menu{
+        overflow: auto;
+    }
 }
 
-@media(max-width: 760px) {
+@media screen and (max-width: 760px) {
     .image-container{
         display: flex ;
         flex-direction: auto;
@@ -584,7 +599,7 @@ li a:hover{
 }
 }
 
-@media(max-width:990px){
+@media screen and (max-width:990px){
     .image-container{
         display: flex;
         flex-direction: auto auto;
@@ -592,17 +607,27 @@ li a:hover{
     }
 }
 
-@media(max-width:1300px){
+@media screen and (max-width:1300px){
     .image-container{
         display: flex;
-        flex-direction: auto auto auto;
+        flex-direction: row;
+        flex: auto auto auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 2064px) {
+    .image-container{
+        width: auto;
+        display: flex;
+        flex: auto auto auto;
         justify-content: center;
     }
 }
 
 
 /* ? Footer-section media query */
-@media (max-width: 360px){
+@media screen and (max-width: 360px){
     .footer{
         display: flex;
         flex-direction: column;
@@ -620,7 +645,7 @@ li a:hover{
 }
 
 
-@media (max-width: 760px){
+@media screen and (max-width: 760px){
     .footer{
         display: flex;
         flex-direction: column;
