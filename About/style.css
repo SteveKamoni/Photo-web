@@ -121,80 +121,6 @@ li a:hover{
 }
 
 
-
-
-
-@media(max-width: 540px){
-
-    li a:hover{
-        color: white;
-    }
-    
-    .nv-bar{
-        display: none;
-    }
-
-    .dropdown-menu span{
-        display: none;
-    }
- 
-    .menu-toggle{
-        display: block;
-        margin-top: 2rem;
-    }
-
-    .dropdown-menu{
-        display: block;
-    }
-
-    .logo-query{
-        display: block;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .menu-toggle-close{
-        display: none;
-    }
-
-}
-
-@media(max-width:430px){
-    .menu-toggle{
-        display: block;
-    }
-
-    .logo-query{
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-left: .6rem;
-        object-position: center;
-    }
-
-    .dropdown-menu{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-
-    li a:hover{
-        color: white;
-    }    
-
-}
-
-@media (max-width: 360px){
-    .logo-query{
-        width: 100%;
-        margin-left: 2.5rem;
-    }
-}
-
 /* ? Who Section */
 .who-container{
     /* background-color: lightskyblue; */
@@ -499,15 +425,59 @@ li a:hover{
     transition: .5s ease-in-out;
 }
 
-@media (max-width: 760px){
-    .footer{
+
+/* ? Media Queries */
+
+@media screen and (max-width: 360px){
+
+    .img-who{
+        object-position: center;
+        max-width: 320px;
+    }
+
+    .text-who{
+        padding: 1rem;
+    }
+
+    .text-who-content{
+        padding: 0;
+    }
+
+    .logo-query{
+        width: 100%;
+        margin-left: 2.5rem;
+    }
+
+    .quote-title-span-absolute{
+        font-size: 1rem;
+        left: .8rem;
+        top: 0;
+    }
+
+    .quote-title-span{
+        font-size: 1.8rem;
+    }
+
+    .words{
+        font-size: 1rem;
+    }
+    
+    .story-container{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: center;
     }
-}
 
-@media (max-width: 360px){
+    .text-story{
+        width: 250px;
+        overflow: auto;
+    }
+
+    .img-story{
+        width: 240px;
+        height: auto;
+    }
+
     .footer{
         display: flex;
         flex-direction: column;
@@ -523,3 +493,130 @@ li a:hover{
         padding: 0;
     }
 }
+
+
+
+@media screen and (max-width:480px){
+    .menu-toggle{
+        display: block;
+    }
+
+    .logo-query{
+        width: 450px;
+        height: auto;
+        margin-left: .6rem;
+        object-position: center;
+        margin-right: .5rem;
+    }
+
+    .dropdown-menu{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .dropdown-menu.open{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    li a:hover{
+        color: white;
+    } 
+    
+    .img-who{
+        width: 430px;
+    }
+
+    .text-who{
+        padding: 1rem;
+    }
+
+    .text-who-content{
+        padding: 0;
+    }
+
+    .quote-title-span-absolute{
+        font-size: 1.5rem;
+        left: 1.4rem;
+        top: 0;
+    }
+
+    .quote-title-span{
+        font-size: 2.4rem;
+    }
+
+    .words{
+        font-size: 1.5rem;
+    }
+
+    .story-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-story{
+        width: 400px;
+        overflow: auto;
+    }
+
+    .img-story{
+        width: 350px;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 540px){
+
+    li a:hover{
+        color: white;
+    }
+    
+    .nv-bar{
+        display: none;
+    }
+
+    .dropdown-menu span{
+        display: none;
+    }
+ 
+    .menu-toggle{
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+
+    .logo-query{
+        display: block;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .menu-toggle-close{
+        display: none;
+    }
+    
+}
+
+
+@media (max-width: 760px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
