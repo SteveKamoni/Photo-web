@@ -592,7 +592,59 @@ li a:hover{
     }
 
     .dropdown-menu{
-        display: block;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .dropdown-menu.open{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .img-who{
+        width: 490px;
+    }
+
+    .text-who{
+        padding: 1rem;
+    }
+
+    .text-who-content{
+        padding: 0;
+    }
+
+    .quote-title-span-absolute{
+        font-size: 1.3rem;
+        left: 3.3rem;
+        top: 0;
+    }
+
+    .quote-title-span{
+        font-size: 2.4rem;
+    }
+
+    .words{
+        font-size: 1.3rem;
+    }
+
+    .story-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-story{
+        width: 480px;
+        overflow: auto;
+    }
+
+    .img-story{
+        width: 420px;
+        height: auto;
     }
 
     .logo-query{
@@ -611,7 +663,64 @@ li a:hover{
 }
 
 
-@media (max-width: 760px){
+@media screen and (max-width: 760px){
+
+    li a:hover{
+        color: white;
+    }
+    
+    .img-who{
+        width: 670px;
+    }
+
+    .text-who{
+        padding: 1rem;
+    }
+
+    .text-who-content{
+        padding: 0;
+    }
+    
+    .quote-container{
+        padding: 6rem;
+    }
+    
+    .quote-title-span-absolute{
+        font-size: 1.3rem;
+        left: 5.5rem;
+        top: 0;
+    }
+
+    .quote-title-span{
+        font-size: 3rem;
+    }
+
+    .words{
+        font-size: 1.3rem;
+    }
+
+    .story-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .text-story{
+        width: 400px;
+        overflow: auto;
+    }
+
+    .img-story{
+        width: 380px;
+        height: auto;
+    }
+
+    
+    .menu-toggle-close{
+        display: none;
+    }
+
+
     .footer{
         display: flex;
         flex-direction: column;
@@ -620,3 +729,33 @@ li a:hover{
 
 }
 
+
+
+@media screen and (max-width:1024px) {
+
+    .img-who{
+        width: 780px;
+    }
+
+    .text-who{
+        padding: 1rem 2rem;
+    }
+
+    .text-who-content{
+        padding: .5rem;
+    }
+    
+    .quote-title-span-absolute{
+        left: 17rem;
+    }
+
+    .text-story{
+        width: 400px;
+        overflow: auto;
+    }
+
+    .img-story{
+        width: 380px;
+        height: auto;
+    }
+}
