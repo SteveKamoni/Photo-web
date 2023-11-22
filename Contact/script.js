@@ -41,6 +41,15 @@ function reloadPage() {
   window.location.reload();
 }
 
+const toggleBtn = document.querySelector('.menu-toggle');
+const dropDown = document.querySelector('.dropdown-menu');
+const close = document.querySelector('.menu-toggle-close')
+
+toggleBtn.addEventListener('click', function(){
+    dropDown.classList.toggle('open');
+})
+
+
 // // ? Form submission section
 // document.getElementById('myForm').addEventListener('submit', function (event) {
 //     event.preventDefault();

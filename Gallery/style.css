@@ -116,6 +116,7 @@ li, a {
 
 .dropdown-menu.open{
   height: 160px;
+  overflow: auto;
 }
 
 li a:hover{
@@ -224,15 +225,18 @@ li a:hover{
     font-size: 2rem;
 }
 
+
 .destination-container-inner{
   background-color: #FEDCC6;
-    margin-top:1rem;
-    padding: 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    justify-content: space-around;
+  margin-top:1rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+  overflow-x: auto;
+  overflow: scroll;
 }
 
 .destination-img-container{

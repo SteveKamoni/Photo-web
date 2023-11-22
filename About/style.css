@@ -428,15 +428,15 @@ li a:hover{
 
 /* ? Media Queries */
 
-@media screen and (max-width: 360px){
+@media all and (max-width: 360px) and (min-width: 320px) {
 
     .img-who{
         object-position: center;
-        max-width: 320px;
+        max-width: 150px;
     }
 
     .text-who{
-        padding: 1rem;
+        padding: 0;
     }
 
     .text-who-content{
@@ -448,9 +448,13 @@ li a:hover{
         margin-left: 2.5rem;
     }
 
+    .quote-container{
+        padding: 0;
+    }
+
     .quote-title-span-absolute{
         font-size: 1rem;
-        left: .8rem;
+        right: 10rem;
         top: 0;
     }
 
@@ -731,7 +735,7 @@ li a:hover{
 
 
 
-@media screen and (max-width:1024px) {
+@media (max-width:1024px) {
 
     .img-who{
         width: 780px;
