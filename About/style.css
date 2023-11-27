@@ -178,7 +178,7 @@ li a:hover {
 
 .quote-container {
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   height: auto;
   width: auto;
   font-family: "Old Standard TT", serif;
@@ -188,6 +188,7 @@ li a:hover {
   font-family: "Old Standard TT", serif;
   position: relative;
   text-wrap: wrap;
+  padding: 0 7rem;
 }
 .quote-title-span {
   font-family: "Petit Formal Script", cursive;
@@ -195,7 +196,6 @@ li a:hover {
 }
 
 .quote-title-span-absolute {
-  position: absolute;
   top: 0;
   left: 34%;
 }
@@ -509,7 +509,7 @@ a {
   }
 }
 
-@media (min-width: 540px) {
+@media all and (min-width: 540px) {
   li a:hover {
     color: white;
   }
@@ -588,16 +588,16 @@ a {
     padding: 1rem;
   }
 
-  .quote-title-span-absolute {
-    left: 6.2rem;
-    font-size: 1.5rem;
+  .quote-title {
+    padding: 0 20rem;
   }
 
   .quote-title-span {
     font-size: 4rem;
   }
 
-  .words {
+  .words,
+  .quote-title-span-absolute {
     font-size: 1.5rem;
   }
 
@@ -630,6 +630,11 @@ a {
   .quote-title-span-absolute {
     left: 1.5rem;
     font-size: 1.5rem;
+  }
+
+  .quote-title {
+    display: flex;
+    justify-content: center;
   }
 
   .quote-title-span {
