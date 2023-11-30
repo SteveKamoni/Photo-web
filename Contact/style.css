@@ -550,13 +550,13 @@ a {
 
   .loading-template {
     justify-content: center;
-    bottom: -65.5rem;
+    bottom: -49.5rem;
     left: 3rem;
   }
 
   .submission-message {
     justify-content: center;
-    bottom: -65.5rem;
+    bottom: -49.5rem;
     left: 3rem;
     text-wrap: nowrap;
   }
@@ -630,13 +630,13 @@ a {
 
   .loading-template {
     justify-content: center;
-    bottom: -45rem;
+    bottom: -29rem;
     left: 3rem;
   }
 
   .submission-message {
     justify-content: center;
-    bottom: -45rem;
+    bottom: -29rem;
     left: 3rem;
     text-wrap: nowrap;
   }
@@ -666,13 +666,13 @@ a {
 
   .loading-template {
     justify-content: center;
-    bottom: -37.5rem;
+    bottom: -21.5rem;
     left: 15rem;
   }
 
   .submission-message {
     justify-content: center;
-    bottom: -37.5rem;
+    bottom: -21.5rem;
     left: 15rem;
     text-wrap: nowrap;
   }
@@ -687,7 +687,7 @@ a {
 
   .submission-message {
     justify-content: center;
-    bottom: -37.5rem;
+    bottom: -21.5rem;
     left: 15rem;
     text-wrap: nowrap;
   }
@@ -696,13 +696,13 @@ a {
 @media all and (min-width: 1440px) {
   .loading-template {
     justify-content: center;
-    bottom: -26.5rem;
+    bottom: -21.5rem;
     left: 15rem;
   }
 
   .submission-message {
     justify-content: center;
-    bottom: -26.5rem;
+    bottom: -21.5rem;
     left: 15rem;
     text-wrap: nowrap;
   }

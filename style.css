@@ -16,7 +16,9 @@ font-family: 'Roboto Slab', serif;
   padding: 0;
 }
 
-/* todo Rem to deal with the different screen sizes by incorporating meadia queries*/
+/* todo deal with the font and make sure that the theme is the same in all the pages. */
+
+/* // Rem to deal with the different screen sizes by incorporating meadia queries*/
 body {
   height: auto;
   margin: 0;
@@ -82,7 +84,7 @@ a {
 .img-logo {
   width: 100%;
   height: auto;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .nav-buttons {
@@ -448,7 +450,116 @@ a {
 }
 
 /* ? Nav-section media query */
-@media screen and (max-width: 540px) {
+
+@media all and (min-width: 320px) {
+  li a:hover {
+    color: white;
+  }
+
+  .nv-bar {
+    display: none;
+  }
+
+  .dropdown-menu span {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .dropdown-menu {
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-menu.open {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .logo-query {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .slide-show {
+    width: 300px;
+    padding: 1rem;
+  }
+
+  .text-slideshow {
+    width: 100%;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .g-image {
+    width: 260px;
+  }
+
+  .content-gallary {
+    width: 12rem;
+    text-wrap: nowrap;
+  }
+
+  .menu-toggle-close {
+    display: none;
+  }
+
+  .head {
+    font-size: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-media-container {
+    padding: 0;
+  }
+
+  .img-social-media {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 430px) {
+  .header {
+    font-size: 4rem;
+  }
+
+  .slide-show {
+    width: 400px;
+    padding: 1rem;
+  }
+
+  .g-image {
+    width: 360px;
+  }
+
+  .content-gallary {
+    margin-left: 2.5rem;
+  }
+}
+
+@media all and (min-width: 540px) {
   li a:hover {
     color: white;
   }
@@ -470,168 +581,36 @@ a {
     display: block;
   }
 
+  .dropdown-menu.open {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+  }
+
   .logo-query {
     display: block;
     width: 100%;
-    object-fit: contain;
-    object-fit: cover;
-    object-position: center;
+  }
+
+  .slide-show {
+    width: 430px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .g-image {
+    margin-left: 5rem;
   }
 
   .menu-toggle-close {
     display: none;
   }
-}
 
-@media screen and (max-width: 430px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .logo-query {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-left: 0.6rem;
-    object-position: center;
-  }
-
-  .dropdown-menu {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .slide-show {
-    width: 380px;
-  }
-
-  li a:hover {
-    color: white;
-  }
-}
-
-@media screen and (min-width: 360px) {
-  .logo-query {
-    width: 100%;
-  }
-
-  .g-image a {
-    width: 15rem;
-  }
-
-  .slide-show {
-    width: 320px;
-  }
-}
-
-@media screen and (min-width: 430px) {
-  .g-image a {
-    width: 17rem;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .logo-query {
-    display: flex;
-    justify-content: center;
-  }
-
-  .dropdown-menu {
-    overflow: scroll;
-  }
-
-  .header {
-    font-size: 3.5rem;
-  }
-
-  .text-slideshow {
-    display: flex;
-    flex-direction: auto;
-  }
-
-  .image-container {
-    display: flex;
-    flex-direction: auto;
-  }
-
-  .head {
-    font-size: 1.5rem;
-  }
-
-  .slide-show {
-    width: 420px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .image-container {
-    display: flex;
-    flex-direction: auto;
-    justify-content: center;
-    margin-right: 0;
-  }
-
-  .header {
-    font-size: 4rem;
-  }
-
-  .head {
-    font-size: 2rem;
-    text-wrap: wrap;
-    text-align: center;
-  }
-
-  .dropdown-menu {
-    overflow: auto;
-  }
-
-  .slide-show {
-    width: 460px;
-  }
-}
-
-@media screen and (min-width: 760px) {
-  .image-container {
-    display: flex;
-    flex-direction: auto;
-    justify-content: center;
-  }
-
-  .slide-show {
-    width: 630px;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .image-container {
-    display: flex;
-    flex-direction: auto auto;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .image-container {
-    display: flex;
-    flex-direction: row;
-    flex: auto auto auto;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 2064px) {
-  .image-container {
-    width: auto;
-    display: flex;
-    flex: auto auto auto;
-    justify-content: center;
-  }
-}
-
-/* ? Footer-section media query */
-@media screen and (min-width: 360px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -648,10 +627,104 @@ a {
   }
 }
 
-@media screen and (min-width: 760px) {
+@media all and (min-width: 760px) {
+  li a:hover {
+    color: white;
+  }
+
+  .nv-bar {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .logo-query {
+    display: none;
+  }
+
+  .header {
+    font-size: 5rem;
+  }
+  .slide-show {
+    width: 660px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .g-image {
+    width: 250px;
+    margin-left: 1rem;
+  }
+
+  .content-gallary {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .menu-toggle-close {
+    display: none;
+  }
+
   .footer {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social-media-container {
+    padding: 0;
+  }
+
+  .img-social-media {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .nv-bar {
+    justify-content: space-between;
+  }
+
+  .img-logo {
+    margin-left: 1rem;
+  }
+  .slide-show {
+    width: 860px;
+  }
+
+  .g-image {
+    width: 360px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .nv-bar {
+    justify-content: space-between;
+  }
+
+  .img-logo {
+    margin-left: 1rem;
+  }
+  .slide-show {
+    width: 1024px;
+  }
+
+  .g-image {
+    width: 430px;
+  }
+
+  .content-gallary {
+    margin-left: 4rem;
   }
 }
