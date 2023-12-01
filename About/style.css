@@ -65,7 +65,6 @@ a {
 .img-logo {
   width: 100%;
   height: auto;
-  margin-left: 0;
 }
 
 .nav-buttons {
@@ -432,8 +431,7 @@ a {
 
   .logo-query {
     display: block;
-    width: 300px;
-    overflow: visible;
+    width: 100%;
   }
 
   .menu-toggle {
