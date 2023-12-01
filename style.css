@@ -667,8 +667,10 @@ a {
   }
 
   .content-gallary {
-    margin-left: 0;
-    font-size: 1rem;
+    width: 15rem;
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    overflow: hidden;
   }
 
   .menu-toggle-close {
